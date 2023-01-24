@@ -111,7 +111,7 @@ sudo nano /etc/fstab
 
 
 ```sh
-192.168.0.5:/volume1/testDeckNFS /run/media/testnfs nfs defaults,nfsvers=4,x-systemd.automount,soft,_netdev,retrans=5 0 0
+192.168.0.5:/volume1/testDeckNFS /run/media/testnfs nfs defaults,nfsvers=4,x-systemd.automount,soft,_netdev,retrans=2 0 0
 ```
 
 
