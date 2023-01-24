@@ -10,9 +10,9 @@
 
 
 ```sh
-sudo pacman -Syu
-
 sudo steamos-readonly disable
+
+sudo pacman -Syu
 
 sudo pacman-key --init
 
