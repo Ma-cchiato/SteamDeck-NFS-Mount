@@ -85,7 +85,7 @@ resume_service() {
         echo "Description=Your Script on Resume" >> $Res_service
         echo -e "\n[Service]" >> $Res_service
         echo "Type=oneshot" >> $Res_service
-        echo "ExecStartPre=/bin/sleep 2" >> $Res_service
+        echo "ExecStartPre=/bin/sleep 5" >> $Res_service
         echo "ExecStart=$Res_script" >> $Res_service
         echo -e "\n[Install]" >> $Res_service
         echo "WantedBy=suspend.target" >> $Res_service
