@@ -112,7 +112,7 @@ sudo nano /etc/fstab
 파일의 마지막 줄에 다음 내용을 추가합니다. 파일의 IP 및 마운트 경로는 본인의 환경에 맞게 입력하시면 됩니다.
 작성 완료 후 수정 사항을 저장하고 나옵니다. (F3 > Enter > F2)
 ```
-192.168.0.5:/volume1/testDeckNFS /run/media/testnfs nfs defaults,nfsvers=4,x-systemd.automount,soft,_netdev,retrans=2 0 0
+192.168.0.5:/volume1/testDeckNFS /run/media/testnfs nfs nfsvers=4,x-systemd.automount,soft,_netdev,retrans=2 0 0
 ```
 
 ![5](https://user-images.githubusercontent.com/122413511/211694751-344cedb5-e6dd-4ac0-8a57-277aa680fbbb.png)
