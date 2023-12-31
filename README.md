@@ -52,9 +52,9 @@ Steam Deck에서 NFS를 마운트하는 방법에는 두 가지가 있습니다:
 
 스크립트를 사용하여 Steam Deck에서 NFS 마운트를 진행하는 과정은 다음과 같습니다:
 
-1. **스크립트 다운로드**: 먼저, 아래 제공된 링크를 통해 NFS 마운트를 위한 스크립트 파일을 다운로드합니다.
+1. **스크립트 다운로드**: 먼저, 아래 제공된 링크를 통해 NFS 마운트를 위한 스크립트 파일을 다운로드합니다. 파일이 다운로드 되지 않는 경우, 링크 우클릭>다른 이름으로 링크 저장을 통해 다운로드 할 수 있습니다.
  
-   [스크립트 다운로드](https://github.com/Ma-cchiato/steamdeck_mount/blob/main/Script/nfs_mount.sh)
+   [스크립트 다운로드](https://raw.githubusercontent.com/Ma-cchiato/SteamDeck-NFS-Mount/main/Script/nfs_mount.sh)
 
 2. **스크립트 저장 위치**: 다운로드한 스크립트 파일을 Steam Deck 내 원하는 디렉토리에 저장합니다. 아래 예시에서는, `/home/deck/NFS` 디렉토리에 저장하여 진행하였습니다.
 
