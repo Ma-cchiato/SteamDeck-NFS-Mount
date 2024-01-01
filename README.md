@@ -14,7 +14,8 @@
 예시로 진행되는 사용자의 계정명은 `deck2` 입니다.
 
 
-아래는 `deck2` 사용자의 uid와 gid를 변경하는 예시 명령어입니다:
+아래는 `deck2` 사용자의 uid와 gid를 변경하는 예시 명령어입니다
+시놀로지 `guest` 계정의 uid는 1025, gid는 100 이므로 해당 값과 동일하게 설정해줍니다.
 ```
 sudo usermod -u 1025 deck2 && sudo usermod -g 100 deck2
 sudo groupmod -g 100 deck2
