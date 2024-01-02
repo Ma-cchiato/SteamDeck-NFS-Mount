@@ -1,6 +1,6 @@
 # Steam Deck NFS Mounting Guide
 
-이 가이드는 Steam Deck에서 Synology NAS의 guest 계정과 매핑할 때 사용할 새로운 사용자 계정을 생성하고, NFS 마운트를 설정하는 방법을 설명합니다.
+이 가이드는 Steam Deck 사용자들이 Synology NAS를 NFS 마운트하는 방법을 단계별로 설명합니다. 
 
 
 ## 1. 사용자 계정 생성 및 수정
