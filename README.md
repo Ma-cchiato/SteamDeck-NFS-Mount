@@ -1,7 +1,8 @@
 # Steam Deck NFS Mounting Guide
 
-이 가이드는 Steam Deck 사용자들이 Synology NAS를 NFS 마운트하는 방법을 단계별로 설명합니다. 
+이 가이드는 Steam Deck 사용자들이 Steam OS에서 Synology NAS에 NFS 마운트하는 방법을 단계별로 설명합니다. 
 
+Synology NAS의 설정은 [링크](https://gall.dcinside.com/mgallery/board/view/?id=steamdeck&no=8982)의 글을 참고하시어 진행한 후, 아래 가이드를 진행하시면 됩니다.
 
 ## 1. 사용자 계정 생성 및 수정
 데스크탑 모드로 진입한 후, 신규 사용자를 생성합니다. 아래 예시에서는 `deck2`로 생성하였습니다.
@@ -57,19 +58,27 @@ Steam Deck에서 NFS를 마운트하는 방법에는 두 가지가 있습니다:
  
    [스크립트 다운로드](https://raw.githubusercontent.com/Ma-cchiato/SteamDeck-NFS-Mount/main/Script/nfs_mount.sh)
 
-2. **스크립트 저장 위치**: 다운로드한 스크립트 파일을 Steam Deck 내 원하는 디렉토리에 저장합니다. 아래 예시에서는, `/home/deck/NFS` 디렉토리에 저장하여 진행하였습니다.
 
-3. **실행 권한 부여**: `Konsole`을 열고, 다운로드한 스크립트 파일에 실행 권한을 부여합니다.
+   또는 `Konsole`을 실핼한 후 아래 명령어를 입력하여 다운로드 할 수 있습니다.
+
+   `/home/deck/NFS` 디렉토리에 `nfs_mount.sh` 파일명으로 다운로드 하는 예시 명령어입니다.
+   ```
+   curl "https://raw.githubusercontent.com/Ma-cchiato/SteamDeck-NFS-Mount/main/Script/nfs_mount.sh" -o "/home/deck/NFS/nfs_mount.sh"
+   ```
+
+3. **스크립트 저장 위치**: 다운로드한 스크립트 파일을 Steam Deck 내 원하는 디렉토리에 저장합니다. 아래 예시에서는, `/home/deck/NFS` 디렉토리에 저장하여 진행하였습니다.
+
+4. **실행 권한 부여**: `Konsole`을 열고, 다운로드한 스크립트 파일에 실행 권한을 부여합니다.
    ```
    chmod +x /home/deck/NFS/nfs_mount.sh
    ```
 
-4. **스크립트 실행**: 스크립트에 실행 권한을 부여한 후, 스크립트를 실행합니다. 스크립트를 실행하려면 다음 명령어를 입력합니다
+5. **스크립트 실행**: 스크립트에 실행 권한을 부여한 후, 스크립트를 실행합니다. 스크립트를 실행하려면 다음 명령어를 입력합니다
    ```
    sh /home/deck/NFS/nfs_mount.sh
    ```
 
-5. **스크립트 절차**
+6. **스크립트 절차**
 
    - **기본 디렉토리**: 스크립트에서 생성되는 모든 파일은 아래 디렉토리에 생성됩니다.
      ```
