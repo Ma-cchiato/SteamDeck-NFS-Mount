@@ -17,8 +17,8 @@ systemd="/etc/systemd/system"
 
 req_files=("$NFS_settings" "$Sus_service" "$Res_service" "$Stu_service" "$Sus_script" "$Res_script" "$Stu_script" "$NFS_log" )
 
-Link=("https://raw.githubusercontent.com/Ma-cchiato/steamdeck_mount/main/Script/resume_nfs.sh"
-"https://raw.githubusercontent.com/Ma-cchiato/steamdeck_mount/main/Script/startup_nfs.sh")
+Link=("https://raw.githubusercontent.com/Ma-cchiato/SteamDeck-NFS-Mount/main/Script/resume_nfs.sh"
+"https://raw.githubusercontent.com/Ma-cchiato/SteamDeck-NFS-Mount/main/Script/startup_nfs.sh")
 
 
 # Initialize directories and files
