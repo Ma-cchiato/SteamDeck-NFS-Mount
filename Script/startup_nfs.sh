@@ -8,10 +8,10 @@ chk_dir() {
 
     if [ -d "$Mount_path" ]; then
         echo -e "\n"
-        echo -e "Verify directory $Mount_path exists.\n"
+        echo -e "Verify directory $Mount_path exists.\n" >> $NFS_log
     else 
         echo -e "\n"
-        echo -e "$(date "+%y-%m-%d %H:%M:%S") [Startup Script] Directory $Mount_path could not be found. Create a new directory.\n"
+        echo -e "$(date "+%y-%m-%d %H:%M:%S") [Startup Script] Directory $Mount_path could not be found. Create a new directory.\n" >> $NFS_log
         sudo mkdir -p $Mount_path
     fi
 }
